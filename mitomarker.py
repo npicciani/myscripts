@@ -3,7 +3,7 @@
 # Created by Natasha Picciani on Aug-23-2019 using Python 3.7
 # Contact natasha.picciani@gmail with questions/comments
 
-"""Summarize result files from MitoFinder and tag the mitochondrial
+"""Use result files from MitoFinder to tag the mitochondrial
 genes in a gtf file."""
 
 import glob2
