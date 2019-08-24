@@ -4,7 +4,7 @@
 # Contact natasha.picciani@gmail with questions/comments
 
 """Use result files from MitoFinder to tag the mitochondrial
-genes in a gtf file."""
+genes in a GTF file."""
 
 import glob2
 import re
@@ -33,7 +33,7 @@ def concatenateFiles(type, target_directory, output_directory):
 	return outfile
 
 def mitochondrialGenes(concatenated_gff):
-	"""List mitochondrial transcripts in the concatenated gff file.
+	"""List mitochondrial genes in the concatenated gff file.
 
 	Keyword arguments:
 	concatenated_gff -- path to concatenated gff file
@@ -49,11 +49,11 @@ def mitochondrialGenes(concatenated_gff):
 	return mitochondrialList
 
 def mitochondrialGTF(concatenated_gff, output_directory):
-	"""Convert gff file with information for mitochondrial genes to gtf and return the path to GTF file.
+	"""Convert GFF file with information for mitochondrial genes to GTF and return the path to GTF file.
 
 	Keyword arguments:
-	concatenated_gff -- path to concatenated gff file
-	output_directory -- path to directory where gtf file should be placed
+	concatenated_gff -- path to concatenated GFF file
+	output_directory -- path to directory where GTF file should be placed
 
 	Important: transcript name must follow 'compXX_cXX_seqXX' 
 
@@ -80,7 +80,7 @@ def cleanGTF(originalGTF, mitochondrialList, output_directory):
 	Keyword arguments:
 	originalGTF -- path to original GTF file
 	mitochondrialList -- list of mitochondrial genes to search for
-	output_directory -- path to directory where clean gtf file should be placed
+	output_directory -- path to directory where clean GTF file should be placed
 
 	Note: A single transcript can contain several mitochondrial gene products as per annotation from Mitofinder. 
 	Instead of editing those lines, best to just remove them and add the mitochondrial gtf block we generated above.
@@ -97,7 +97,7 @@ def cleanGTF(originalGTF, mitochondrialList, output_directory):
 	return output
 
 def concatenateGTF(cleanGTF, mitochondrialGTF, output_directory):
-	"""Concatenate clean and mitochondrial gtf files and return the path to concatenated file.
+	"""Concatenate clean and mitochondrial GTF files and return the path to concatenated file.
 
 	Keyword arguments:
 	cleanGTF -- path to clean GTF file
