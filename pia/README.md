@@ -21,7 +21,7 @@ blastp (download NCBI blast+ executables version 2.8)
 mafft v7.407 (download from https://mafft.cbrc.jp/alignment/software)  
 raxmlHPC-PTHREADS-SSE3 version 8.2.12 (download from https://github.com/stamatak/standard-RAxML)
 
-This script uses the three files (baitfile, sequence alignment, and phylogenetic tree; also available at 
+This script uses three files (baitfile, sequence alignment, and phylogenetic tree; also available at 
 this repository) for retrieving candidate opsin sequences and then placing those sequences in a previously 
 published phylogenetic tree (in this case, from Picciani et al. 2018). 
 
