@@ -38,8 +38,8 @@ The final opsin file will be written with the extension ".opsins.fasta"
 
 This script is especifically designed to work for mining opsin genes from transcriptomes. But with a different set of baitsfile, 
 alignment and phylogenetic tree, it can be used to search for genes from other families. Notice that when doing that, 
-you also need to modify the placement step by setting a new outgroup and defining the boundaries for the clade in your 
-phylogenetic tree that corresponds to your gene family of interest as well as the outgroup to be used for rooting the tree.
+you also need to modify the placement step by setting the outgroup to be used for rooting the tree and defining the boundaries for the clade in your 
+phylogenetic tree that corresponds to your gene family of interest.  
 
 You can change those as follows:
 
