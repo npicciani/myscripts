@@ -8,6 +8,7 @@ Usage: mitomarker.py [-h] -o output_directory -m mitofinder_folder -gtf GTF_file
 Label the mitochondrial genes found by MitoFinder in a reference GTF file
 
 optional arguments:  
+|--------|----------|
 |  -h, --help | show this help message and exit  |
 |  -o output_directory | directory for placing output files  |
 |  -m mitofinder_folder | folder with mitofinder final results  |
