@@ -5,16 +5,15 @@ genes in the gene name field of a reference GTF file.
  
 Usage: mitomarker.py [-h] -o output_directory -m mitofinder_folder -gtf GTF_file [-version]
 
-Label the mitochondrial genes found by MitoFinder in a reference GTF file
-
+Label the mitochondrial genes found by MitoFinder in a reference GTF file  
 
 |        Option       |   Description    |
 | :------------------ | -:- |
-|-h, --help           | show this help message and exit.  |
-|-o output_directory  | directory for placing output files.  |
-|-m mitofinder_folder | folder with mitofinder final results.  |
-|-gtf GTF_file        | original GTF file with mitochondrial genes.  |
-|-version             | show program's version number and exit.  |
+|-h, --help           | show this help message and exit.|
+|-o output_directory  | directory for placing output files.|
+|-m mitofinder_folder | folder with mitofinder final results.|
+|-gtf GTF_file        | original GTF file with mitochondrial genes.|
+|-version             | show program's version number and exit.|
 
  
  
