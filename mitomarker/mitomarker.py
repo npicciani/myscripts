@@ -3,7 +3,7 @@
 # Created by Natasha Picciani on Aug-23-2019 using Python 3.7
 # Contact natasha.picciani@gmail with questions/comments
 
-"""Use result files from MitoFinder to tag the mitochondrial
+"""Use result files from MitoFinder to tag (append MT_) the mitochondrial
 genes in a GTF file."""
 
 import glob2
@@ -43,9 +43,7 @@ def mitochondrialGenes(concatenated_gff):
 		for line in infile:
 			line=line.strip('\n')
 			elementList=line.split('\t')
-			p=re.search(r'(comp\d+_c\d+_seq\d+)', elementList[0])
-			transcriptID=p.group(1)
-			mitochondrialList.append(transcriptID)
+			mitochondrialList.append(elementList[0])
 	return mitochondrialList
 
 def mitochondrialGTF(concatenated_gff, output_directory):
@@ -119,13 +117,13 @@ def concatenateGTF(cleanGTF, mitochondrialGTF, output_directory):
 
 if __name__ == '__main__':
 
-	parser = argparse.ArgumentParser(prog='MitoMarker', description='Label the mitochondrial genes found by MitoFinder in a reference GTF file')
+	parser = argparse.ArgumentParser(description='Label the mitochondrial genes found by MitoFinder in a reference GTF file')
 
-	parser.add_argument('-o', metavar = 'output directory', type = str, required = True,
+	parser.add_argument('-o', metavar = 'output_directory', type = str, required = True,
 					   default = ".", help = "directory for placing output files")
-	parser.add_argument('-m', metavar = 'mitofinder folder', type = str, required = True, 
+	parser.add_argument('-m', metavar = 'mitofinder_folder', type = str, required = True, 
 						help = "folder with mitofinder final results")
-	parser.add_argument('-gtf', metavar = 'GTF file', type = str, required = True,
+	parser.add_argument('-gtf', metavar = 'GTF_file', type = str, required = True,
 					   help = "original GTF file with mitochondrial genes")
 	parser.add_argument('-version', action='version', version='%(prog)s 0.1.0')
 
