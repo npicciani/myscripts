@@ -22,6 +22,6 @@ Label the mitochondrial genes found by MitoFinder in a reference GTF file.
 ## Note on Gene/Transcript Identifier	
 
 The reference GTF file to be tagged by this script was originally based on transcriptome assemblies built with old Trinity versions.
-Therefore, the default gene/transcript identifier (type 1) uses transcript names that follow the format "compXX_cXX_seqXX".  
-If the assembly was made using a newer version of Trinity, the alternative gene/transcript identifier (type 2) will follow the format "TRINITY_DNXXXXX_cX_gX_iX".
+Therefore, the default gene/transcript identifier (type_1) uses transcript names that follow the format "compXX_cXX_seqXX".  
+If the assembly was made using a newer version of Trinity, the alternative gene/transcript identifier (type_2) will follow the format "TRINITY_DNXXXXX_cX_gX_iX".
 You can set any of these two types by passing the argument -identifier when calling MitoMarker.
