@@ -17,15 +17,13 @@ from Bio import SeqIO
 
 def getGeneID(header, type):
 	
-	"""
-	
+	"""	
 	Search the header of a fasta file and return the gene identifier of a sequence."
 
 	Arguments:
 	header -- the header string (the record.id value of a sequence when using SeqIO package).
 	type -- the type of gene identifier; type_1 = "compXX_cXX_seqXX", type_2="TRINITY_DNXXXXX_cX_gX_iX",
 			type_3="SegXX.XX.XXXX".
-
 	"""
 
 	if type == "type_1":
@@ -41,8 +39,7 @@ def getGeneID(header, type):
 
 def keepLongest(fastaFile, identifier_type, output_directory):
 
-	"""	
-	
+	"""		
 	Read a fasta file with ORFs (open reading frames) and select the longest ORF per each gene. Return a FASTA file.
 
 	Arguments:
@@ -50,7 +47,6 @@ def keepLongest(fastaFile, identifier_type, output_directory):
 	identifier_type -- the type of gene identifier; type_1 = "compXX_cXX_seqXX", type_2="TRINITY_DNXXXXX_cX_gX_iX",
 			type_3="SegXX.XX.XXXX".
 	output_directory -- path to directory for placing output file
-
 	"""
 	
 	seqs={}
