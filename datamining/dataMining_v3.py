@@ -5,7 +5,7 @@
 '''
 created on June 3, 2019
 by Natasha Picciani 
-usage: dataMining_v2.py taxaList taxaRestriction outputDir
+usage: dataMining_v3.py taxaList taxaRestriction outputDir
 
 This script searches the NCBI Nucleotide database, pull sequences for a list of taxa, 
 and cluster them using MCL
