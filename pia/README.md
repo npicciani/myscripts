@@ -14,6 +14,7 @@ outdir -- path to the output directory
 ## User defined paths
 
 First set the path to a few things in the User-defined Paths block (lines 57-65):
+
 (Alternatively, create a conda environment using the file `pia.yaml`)
 
 transdecoder_path (download from https://github.com/TransDecoder/TransDecoder)  
